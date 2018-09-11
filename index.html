@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>Week 1: Web Skills, Day 2</title>
+  
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- ------------- -->
+      <section class="title-slide">
+        <h3 class="title-text">MAKING ART ON THE WEB</h3>
+        <div class="sub-head">
+          <div class="sub-head-text"><span>09.13.18 - Day 2</span></div>
+        </div>
+      </section>
+      
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Agenda</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>what we're doing today:</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Homework Review - 3 examples of art (HTML & CSS)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Overview of New Media Artists</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Git & GitHub</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Terminal Basics</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Running a Local Server</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>What is the DOM?</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Javascript Fundamentals</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Dev Tools: Using the Console</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Setting up GitHub Pages</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Homework 😬</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Homework Review</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>3 examples of art (HTML & CSS)</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Overview of New Media Artists</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>todo: by category</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+       <!-- ------------- -->
+       <section class="child-slide">
+        <h5>Git & GitHub</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Getting Set Up</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Create a <a href="https://github.com/" target="_blank">GitHub</a> account if you don't already have one</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Install the <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> app<sup>*</sup></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disclaimer">
+          <span><sup>*</sup> optional if you'd prefer to use command line.</span>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Why are we learning this?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Open collaboration, open source, open communities</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>To build good habits early</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>In the long term it will save you time and energy</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>What is Git?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Git is a <b>Version Control System</b> (VCS) that tracks file changes in a directory</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>You can think of git as a set of commands that help you track changes to your code</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>The way we use these commands is via a GUI (graphical user interface), like GitHub Desktop</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Or with command line, using the CLI (command line interface)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>GitHub</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>What is GitHub?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>GitHub is a <b>hosting service</b> for your code repositories</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>GitHub comes with some features, like GitHub pages, which we'll use in an upcoming exercise</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>There are other hosting services out there (Bitbucket, GitLab)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git Basics I: Cloning your first repo</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Basic terminology & commands</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>We will start using Git by 'cloning' an existing repo</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>A <b>remote</b> repo refers to a repository that is hosted somewhere (like GitHub)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span><b>Cloning</b> a repo refers to making a copy of it locally (downloaded to your machine)</span>
+              </div>
+            </li>            
+          </ul>
+        </div>
+      </section>
+        
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git Basics I: Cloning your first repo</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Cloning with <u><b>GitHub Desktop</b></u></span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>link to repo <a href="#" target="_blank">here</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <img class="child-slide-img" src="https://ashfurrow.com/img/blog/resolving-github-merge-conflicts/url.png" width="400" height="auto"/>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git Basics I: Cloning your first repo</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Cloning with <u><b>command line</b></u></span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>link to repo <a href="#" target="_blank">here</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    #TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git Basics I: Cloning your first repo</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Open your repo in your text editor of choice</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>TODO</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+  
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Terminal basics</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Some quick useful things</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>You will need to <code>cd</code> into the repo you have just downloaded</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Where did you clone your repo?</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # lists your current working directory
+                    Rachels-MacBook-Pro:~ rosewater$ pwd
+                    /Users/rosewater
+
+                    # ls - list items in your current working directory
+                    Rachels-MacBook-Pro:~ rosewater$ ls
+                    Applications
+                    Desktop
+                    Documents
+                    Downloads
+                    # etc...
+                    
+                    # change your working directory (one level deeper)
+                    Rachels-MacBook-Pro:~ rosewater$ cd Documents/my_new_folder
+                    Rachels-MacBook-Pro:my_new_folder rosewater$ pwd
+                    /Users/rosewater/Documents/my_new_folder
+
+                    # change your working direcotry (one level back out)
+                    Rachels-MacBook-Pro:my_new_folder rosewater$ cd ..
+                    Rachels-MacBook-Pro:Documents rosewater$ pwd
+                    /Users/rosewater/Documents
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Running a local server</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Why do we need to do this?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>You should get in the habit of using a local server, even when working with static files</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>You won't be able to access your file system (e.g, if you need to load in an image)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>You won't be able to make http requests, like when working with an API</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span class="reading-indicator">READING</span> (to puruse): <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server" target="_blank">MDN Web Docs - Setup a Local Testing Server</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Running a local server</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>2 ways</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span><a href="https://atom.io/packages/atom-live-server" target="_blank">Atom Live Server</a> package, for Atom users</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Running in the terminal</span>
+                <pre>
+                  <code data-trim data-noescape>
+                    # Check what version of Python is installed
+                    python -V
+                    
+                    # above 3.X
+                    python -m http.server 3000
+                    
+                    # above 2.X
+                    python -m SimpleHTTPServer 3000
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What is the DOM?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span><b>D</b>ocument <b>O</b>bject <b>M</b>odel</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>todo: variables, loops, functions</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Dev Tools: Using the Console</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Debugging Basics</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Setting up GitHub Pages</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Exercise: Create a personal page</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Homework</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Due next class</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Finish your personal page</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Finish your 3 panel comic</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Javascript exercises</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+     <!-- END SLIDES -->
+    </div>
+  </div>
+</body>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+  // ---------------------------------------------
+  init();
+ 
+  // ---------------------------------------------
+  function init() {
+    Reveal.initialize({
+      dependencies: [
+      { 
+        src: 'plugin/highlight/highlight.js', 
+        async: true, 
+        callback: function() { hljs.initHighlightingOnLoad(); } 
+      }
+      ]
+    });
+    
+    Reveal.configure({
+      slideNumber: true,
+      slideNumber: 'c/t'
+    });
+  
+  }
+</script>
+
+</html>
