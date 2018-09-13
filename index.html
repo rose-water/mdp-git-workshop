@@ -990,7 +990,15 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    &lt;!-- &lt;, &gt;, &lt;=, &gt;=, ==, &&, || --&gt;                 
+                    &lt;!-- Using these in any combination should evaluate to a boolean --&gt;    
+                    let a = 80;
+                    let b = 35;
+                    
+                    &lt;!-- What do these expressions evaluate to? --&gt;    
+                    alert (a &gt; b);
+                    alert (a &gt;= 50 || b &gt;= 40);
+                    alert (b &gt;= 30 && b &lt; 50);
                   </code>
                 </pre>
               </div>
@@ -1004,7 +1012,7 @@
         <h5>Javascript Fundamentals</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Comparison Operators</span>
+            <span>Conditional Operators: <code>if else</code></span>
           </div>
         </div>
         <div class="child-slide-body">
@@ -1013,53 +1021,32 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
-                  </code>
-                </pre>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+                    let user = {
+                      name      : "Helga Pataki",
+                      age       : 9,
+                      hairColor : "Blonde",
+                      loveInterest: {
+                        name      : "Arnold Shortman",
+                        age       : 9,
+                        hairColor : "Blonde"
+                      }
+                    }
 
-      <!-- ------------- -->
-      <section class="child-slide">
-        <h5>Javascript Fundamentals</h5>
-        <div class="sub-head">
-          <div class="sub-head-text">
-            <span>Logical Operators</span>
-          </div>
-        </div>
-        <div class="child-slide-body">
-          <ul class="child-slide-body-list">
-            <li>
-              <div class="list-item-container">
-                <pre>
-                  <code data-trim data-noescape>
-                    # TODO
-                  </code>
-                </pre>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <!-- ------------- -->
-      <section class="child-slide">
-        <h5>Javascript Fundamentals</h5>
-        <div class="sub-head">
-          <div class="sub-head-text">
-            <span>Conditional Operators</span>
-          </div>
-        </div>
-        <div class="child-slide-body">
-          <ul class="child-slide-body-list">
-            <li>
-              <div class="list-item-container">
-                <pre>
-                  <code data-trim data-noescape>
-                    # TODO
+                    if (user["loveInterest"]["name"] == "Arnold") {
+                      user["loveInterest"]["nickname"] = "Football Head";
+                    } else {
+                      alert("does not love Arnold!");
+                    }
+
+
+                    if (user["age"] &gt;= 9 && user["age"] &lt; 13) {
+                      alert("pre-teen!")
+                    } else if (user["age"] &gt;= 13 && user["age"] &lt; 20) {
+                      alert("teenager!");
+                    } else {
+                      alert(user["name"] + "is: " + user["age"]);
+                    }
                   </code>
                 </pre>
               </div>
@@ -1082,7 +1069,27 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    let fruit = "banana";
+                    let text;
+
+                    switch (fruit) {
+                      case "apple":
+                        text = "an " + fruit + " a day keeps the doctor away";
+                        break;
+                      
+                      case "orange":
+                        text = fruit + " you glad I didn't say banana";
+                        break;
+                      
+                      case "strawberry":
+                        text = fruit + " fields forever";
+                        break;
+                      
+                      default:
+                        text = "fruit is: " + fruit;
+                    }
+
+                    alert(text);
                   </code>
                 </pre>
               </div>
