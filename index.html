@@ -1034,7 +1034,7 @@
 
 
                     if (user["loveInterest"]["name"] == "Arnold") {
-                      user["loveInterest"]["nickname"] = "Football Head";
+                      user["loveInterest"]["nickname"] = "Football Head";                        
                     } else {
                       alert("does not love Arnold!");
                     }
@@ -1074,7 +1074,7 @@
 
                     switch (fruit) {
                       case "apple":
-                        text = "an " + fruit + " a day keeps the doctor away";
+                        text = "an " + fruit + " a day keeps the doctor away";                           
                         break;
                       
                       case "orange":
@@ -1112,7 +1112,13 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    let n = 0;
+                  
+                    while (n < 10) {
+                      n++;
+                    }
+
+                    alert("n is: " + n);                                    
                   </code>
                 </pre>
               </div>
@@ -1135,7 +1141,14 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+
+                    let msg = "Number is: ";
+
+                    &lt;!-- for([initialExpression]; [condition]; [incrementExpression]) { --&gt; 
+                    for (let i = 0; i <= 3; i++) {
+                      alert(msg + i);
+                    }
+
                   </code>
                 </pre>
               </div>
@@ -1156,11 +1169,99 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
+                +<span>Functions are blocks of code that can be executed repeatedly</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>They should be written in a modular nature (don't do too much in one function!)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    &lt;!-- One way to declare a function --&gt;
+
+                    &lt;!-- Functions may or may not have params (comma separated) --&gt;
+                    function generateCustomAlert(msg) {
+                      alert(msg);
+                    }
+
+                    generateCustomAlert("Here is my alert!");
                   </code>
                 </pre>
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- Functions may or may not return a value --&gt;                       
+                    function sumNums(a, b) {
+                      return a + b;
+                    }
+
+                    let x = sumNums(4, 5);
+                    alert(x);
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Built-in functions</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span class="reading-indicator">REFERENCE:</span> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank">MDN Docs: Math</a>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <code data-trim data-noescape>
+                  &lt;!-- Math functions --&gt;
+                  let myVal = Math.pow(7, 3);
+
+                  &lt;!-- 343 --&gt;
+                  alert(myVal); 
+
+                  &lt;!-- Returns a floating point num between 0 and 1, pseudo-random --&gt;
+                  let randomVal = Math.random();
+                </code>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Built-in functions</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <code data-trim data-noescape>
+                  &lt;!-- Array functions: filter, map, reduce, sort, etc --&gt;
+                  &lt;!-- We will cover this more in JS I --&gt;
+
+                  let words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+                  let filteredResult = words.filter(function(word) {
+                    return word.length > 6
+                  });
+                </code>
               </div>
             </li>
           </ul>
