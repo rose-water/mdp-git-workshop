@@ -643,7 +643,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    &lt;!-- /exercises/01-hello-world-1.html --&gt;                  
+                    &lt;!-- /exercises/01-hello-world-1.html --&gt;
+
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                       &lt;head&gt;
@@ -678,7 +679,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    &lt;!-- /exercises/02-hello-world-2.html --&gt;                
+                    &lt;!-- /exercises/02-hello-world-2.html --&gt;                       
+
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                       &lt;head&gt;
@@ -728,6 +730,7 @@
                 <pre>
                   <code data-trim data-noescape>
                     &lt;!-- /exercises/03-js-variables.html --&gt;
+
                     &lt;!-- Assign string "Hello" to myMsg --&gt;           
                     <mark>let myMsg</mark> = "Hello";
                     alert(myMsg);
@@ -772,7 +775,7 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    &lt;!-- /exercises/04-js-primitives.html --&gt;
+                    &lt;!-- /exercises/04-js-primitives.html --&gt;                            
 
                     &lt;!-- Strings --&gt;
                     let myMsg = "Hello, World!";
@@ -827,6 +830,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/05-js-objects.html --&gt;
+
                     let newUser = {
                       name : "Jane Doe",
                       id : "3XT89V9",
@@ -860,12 +865,12 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>Arrays are essentially indexed lists that store multiple values in a single variable</span>
+                +<span>Arrays are objects that store multiple values in a single variable</span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
-                +<span>Indexing starts from 0!</span>
+                +<span>They are indexed lists, where indexing starts from 0!</span>
               </div>
             </li>
             <li>
@@ -877,7 +882,9 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    &lt;!-- One way to initialize an array --&gt;
+                    &lt;!-- /exercises/06-js-arrays.html --&gt;
+
+                    &lt;!-- One way to initialize an array --&gt;                   
                     let scouts = ["Eren", "Mikasa", "Armin", "Levi"];
                     
                     &lt;!-- Access by index --&gt;
@@ -904,6 +911,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/07-js-operators-numbers.html --&gt;                
+                    
                     &lt;!-- Addition and subtraction --&gt;
                     let x = 5;
                     let y = 8;
@@ -919,11 +928,7 @@
                     
                     alert(m / n);
                     alert(m % 3);
-                  </code>
-                </pre>
-    
-                <pre>
-                  <code data-trim data-noescape>
+
                     &lt;!-- Increment and Decrement --&gt;
                     let w = 4;
                     
@@ -958,11 +963,13 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/08-js-operators-strings.html --&gt;                    
+
                     let myMsg = "Hello";                                                    
                     let newMsg = myMsg + " World!";
                     alert(newMsg);
 
-                    let yourMsg = "Testing, testing...";
+                    let yourMsg = "Testing, testing... ";
                     let testNum = 123;
 
                     &lt;!-- Conversion from number to string --&gt;
@@ -981,7 +988,7 @@
         <h5>Javascript Fundamentals</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Comparisons / Logical Operators</span>
+            <span>Comparisons & Logical Operators</span>
           </div>
         </div>
         <div class="child-slide-body">
@@ -990,6 +997,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/09-js-logical-ops.html --&gt;  
+
                     &lt;!-- &lt;, &gt;, &lt;=, &gt;=, ==, &&, || --&gt;                 
                     &lt;!-- Using these in any combination should evaluate to a boolean --&gt;    
                     let a = 80;
@@ -1012,7 +1021,7 @@
         <h5>Javascript Fundamentals</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Conditional Operators: <code>if else</code></span>
+            <span>Conditionals: <code>if else</code></span>
           </div>
         </div>
         <div class="child-slide-body">
@@ -1021,6 +1030,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/10-js-conditionals.html --&gt;                    
+                      
                     let user = {
                       name      : "Helga Pataki",
                       age       : 9,
@@ -1032,16 +1043,16 @@
                       }
                     }
 
-
+                    &lt;!-- if else example --&gt; 
                     if (user["loveInterest"]["name"] == "Arnold") {
                       user["loveInterest"]["nickname"] = "Football Head";                        
                     } else {
                       alert("does not love Arnold!");
                     }
 
-
+                    &lt;!-- if, else if, else example --&gt; 
                     if (user["age"] &gt;= 9 && user["age"] &lt; 13) {
-                      alert("pre-teen!")
+                      alert("kid!")
                     } else if (user["age"] &gt;= 13 && user["age"] &lt; 20) {
                       alert("teenager!");
                     } else {
@@ -1069,6 +1080,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/11-js-switch.html --&gt; 
+
                     let fruit = "banana";
                     let text;
 
@@ -1112,6 +1125,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/12-js-while.html --&gt;                       
+
                     let n = 0;
                   
                     while (n < 10) {
@@ -1141,10 +1156,11 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/13-js-for.html --&gt;
 
                     let msg = "Number is: ";
 
-                    &lt;!-- for([initialExpression]; [condition]; [incrementExpression]) { --&gt; 
+                    &lt;!-- for ([initialExpression]; [condition]; [incrementExpression]) { --&gt; 
                     for (let i = 0; i <= 3; i++) {
                       alert(msg + i);
                     }
@@ -1181,8 +1197,9 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    &lt;!-- One way to declare a function --&gt;
+                    &lt;!-- /exercises/14-js-functions.html --&gt;
 
+                    &lt;!-- One way to declare a function --&gt;
                     &lt;!-- Functions may or may not have params (comma separated) --&gt;
                     function generateCustomAlert(msg) {
                       alert(msg);
@@ -1227,7 +1244,9 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    &lt;!-- Math functions --&gt;
+                    &lt;!-- /exercises/15-js-math.html --&gt;
+
+                    &lt;!-- (number, raisedBy) --&gt;
                     let myVal = Math.pow(7, 3);
 
                     &lt;!-- 343 --&gt;
@@ -1235,6 +1254,7 @@
 
                     &lt;!-- Returns a floating point num between 0 and 1, pseudo-random --&gt;
                     let randomVal = Math.random();
+                    alert(randomVal);
                   </code>
                 </pre>
               </div>
@@ -1262,6 +1282,8 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
+                    &lt;!-- /exercises/16-js-array-funcs.html --&gt;
+
                     &lt;!-- Array functions: adding to an array --&gt;
 
                     let words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
@@ -1273,11 +1295,18 @@
                 <pre>
                   <code data-trim data-noescape>
                     &lt;!-- Array functions: filter, map, reduce, sort, etc --&gt;
+                    &lt;!-- These functions return new arrays --&gt;
 
-                    let words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-                    let filteredResult = words.filter(function(word) {
-                      return word.length > 6
+                    let filteredResults = words.filter(function(word) {
+                      return word.length > 6;
                     });
+                    
+                    &lt;!-- Because filteredResult is an array, we can index it as well --&gt;
+                    if (filteredResults.length > 0) {
+                      alert(filteredResults); 
+                    } else {
+                      alert("Nothing left after filtering!");
+                    }
                   </code>
                 </pre>
               </div>
@@ -1328,7 +1357,7 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span></span>
+                <img class="child-slide-img" src="https://help.github.com/assets/images/help/repository/create-repository-desc.png" width="500" height="auto" />
               </div>
             </li>
           </ul>
@@ -1347,7 +1376,7 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span></span>
+                +<span>Refer to previous slides if you need help, or ask a friend, me, or the TAs :)</span>
               </div>
             </li>
           </ul>
@@ -1365,9 +1394,17 @@
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
-              <div class="list-item-container">
-                <img class="child-slide-img" src="https://mdn.mozillademos.org/files/9231/file-structure.png" width="500" height="auto" />
-              </div>
+              <pre>
+                <code data-trim data-noescape>
+                  + index.html                                                    
+                  
+                  + /css
+                      + style.css
+                  
+                  + /js
+                      + sketch.js
+                </code>
+              </pre>
             </li>
           </ul>
         </div>
