@@ -1213,7 +1213,7 @@
         <h5>Javascript Fundamentals</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Built-in functions</span>
+            <span>Built-in functions: Math</span>
           </div>
         </div>
         <div class="child-slide-body">
@@ -1225,16 +1225,18 @@
             </li>
             <li>
               <div class="list-item-container">
-                <code data-trim data-noescape>
-                  &lt;!-- Math functions --&gt;
-                  let myVal = Math.pow(7, 3);
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- Math functions --&gt;
+                    let myVal = Math.pow(7, 3);
 
-                  &lt;!-- 343 --&gt;
-                  alert(myVal); 
+                    &lt;!-- 343 --&gt;
+                    alert(myVal); 
 
-                  &lt;!-- Returns a floating point num between 0 and 1, pseudo-random --&gt;
-                  let randomVal = Math.random();
-                </code>
+                    &lt;!-- Returns a floating point num between 0 and 1, pseudo-random --&gt;
+                    let randomVal = Math.random();
+                  </code>
+                </pre>
               </div>
             </li>
           </ul>
@@ -1246,26 +1248,53 @@
         <h5>Javascript Fundamentals</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Built-in functions</span>
+            <span>Built-in functions: Arrays</span>
           </div>
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                <code data-trim data-noescape>
-                  &lt;!-- Array functions: filter, map, reduce, sort, etc --&gt;
-                  &lt;!-- We will cover this more in JS I --&gt;
+                +<span>We'll cover these more in Javascript I</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- Array functions: adding to an array --&gt;
 
-                  let words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-                  let filteredResult = words.filter(function(word) {
-                    return word.length > 6
-                  });
-                </code>
+                    let words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+                    words.push('bright');
+                    alert(words);
+                  </code>
+                </pre>
+
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- Array functions: filter, map, reduce, sort, etc --&gt;
+
+                    let words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+                    let filteredResult = words.filter(function(word) {
+                      return word.length > 6
+                    });
+                  </code>
+                </pre>
               </div>
             </li>
           </ul>
         </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>TIME CHECK</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>More Git or Project Time?</span>
+          </div>
+        </div>
+        <div class="child-slide-body"></div>
       </section>
 
       <!-- ------------- -->
