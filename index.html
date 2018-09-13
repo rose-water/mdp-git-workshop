@@ -42,7 +42,7 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>Overview of New Media Artists</span>
+                +<span>Overview of Media Artists</span>
               </div>
             </li>
             <li>
@@ -97,20 +97,12 @@
             <span>3 examples of art (HTML & CSS)</span>
           </div>
         </div>
-        <div class="child-slide-body">
-          <ul class="child-slide-body-list">
-            <li>
-              <div class="list-item-container">
-                +<span></span>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <div class="child-slide-body"></div>
       </section>
 
       <!-- ------------- -->
       <section class="child-slide">
-        <h5>Overview of New Media Artists</h5>
+        <h5>Overview of Media Artists</h5>
         <div class="sub-head">
           <div class="sub-head-text">
             <span>todo: by category</span>
@@ -258,17 +250,17 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>We will start using Git by 'cloning' an existing repo</span>
+                +<span>We will start by 'cloning' a remote repo (today's code examples)</span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
-                +<span>A <b>remote</b> repo refers to a repository that is hosted somewhere (like GitHub)</span>
+                +<span><b>Remote</b> repo: a repository that is hosted somewhere (like GitHub)</span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
-                +<span><b>Cloning</b> a repo refers to making a copy of it locally (downloaded to your machine)</span>
+                +<span><b>Cloning</b> a repo: making a copy of it locally (downloaded to your machine)</span>
               </div>
             </li>            
           </ul>
@@ -285,9 +277,14 @@
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  +<span>GitHub Desktop has a default directory it clones to, you can change this if you wish</span>
+                </div>
+              </li>
             <li>
               <div class="list-item-container">
-                +<span>link to repo <a href="#" target="_blank">here</a></span>
+                +<span>link to repo <a href="https://github.com/rose-water/ga-web-day-2" target="_blank">here</a></span>
               </div>
             </li>
             <li>
@@ -311,14 +308,21 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>link to repo <a href="#" target="_blank">here</a></span>
+                +<span><code>cd</code> into the directory where you want the repo to be cloned, e.g., Documents or Desktop</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>link to repo <a href="https://github.com/rose-water/ga-web-day-2" target="_blank">here</a></span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    #TODO
+                    # Cloning this repo to my Documents directory
+                    Rachels-MacBook-Pro:~ rosewater$ cd Documents
+                    Rachels-MacBook-Pro:Documents rosewater$ git clone https://github.com/rose-water/ga-web-day-2.git
                   </code>
                 </pre>
               </div>
@@ -339,66 +343,13 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>TODO</span>
+                +<span>Typically you can drag the folder into your editor, but it depends on the editor</span>
               </div>
             </li>
           </ul>
         </div>
       </section>
-  
-      <!-- ------------- -->
-      <section class="child-slide">
-        <h5>Terminal basics</h5>
-        <div class="sub-head">
-          <div class="sub-head-text">
-            <span>Some quick useful things</span>
-          </div>
-        </div>
-        <div class="child-slide-body">
-          <ul class="child-slide-body-list">
-            <li>
-              <div class="list-item-container">
-                +<span>You will need to <code>cd</code> into the repo you have just downloaded</span>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
-                +<span>Where did you clone your repo?</span>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
-                <pre>
-                  <code data-trim data-noescape>
-                    # lists your current working directory
-                    Rachels-MacBook-Pro:~ rosewater$ pwd
-                    /Users/rosewater
-
-                    # ls - list items in your current working directory
-                    Rachels-MacBook-Pro:~ rosewater$ ls
-                    Applications
-                    Desktop
-                    Documents
-                    Downloads
-                    # etc...
-                    
-                    # change your working directory (one level deeper)
-                    Rachels-MacBook-Pro:~ rosewater$ cd Documents/my_new_folder
-                    Rachels-MacBook-Pro:my_new_folder rosewater$ pwd
-                    /Users/rosewater/Documents/my_new_folder
-
-                    # change your working direcotry (one level back out)
-                    Rachels-MacBook-Pro:my_new_folder rosewater$ cd ..
-                    Rachels-MacBook-Pro:Documents rosewater$ pwd
-                    /Users/rosewater/Documents
-                  </code>
-                </pre>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-        
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>Running a local server</h5>
@@ -438,14 +389,48 @@
         <h5>Running a local server</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>2 ways</span>
+            <span>From your Editor</span>
           </div>
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span><a href="https://atom.io/packages/atom-live-server" target="_blank">Atom Live Server</a> package, for Atom users</span>
+                +<span>Editors will either have this functionality built in or have a package that you can install</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span><b>Packages:</b> utilities you can install for your editor to aid in development (share your faves!)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span><a href="https://atom.io/packages/atom-live-server" target="_blank">Atom Live Server package</a>, <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">VS Code Live Server package</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <img class="child-slide-img" src="https://raw.githubusercontent.com/jas-chen/atom-live-server/master/doc/demo.gif" width="600" height="auto">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Running a local server</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Using Terminal</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>You will need to <code>cd</code> into the repo you have just downloaded</span>
               </div>
             </li>
             <li>
@@ -453,7 +438,7 @@
                 +<span>Running in the terminal</span>
                 <pre>
                   <code data-trim data-noescape>
-                    # Check what version of Python is installed
+                    # Check what version of Python is installed                    
                     python -V
                     
                     # above 3.X
@@ -461,6 +446,49 @@
                     
                     # above 2.X
                     python -m SimpleHTTPServer 3000
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Terminal basics</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Some quick useful things</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # lists your current working directory                                   
+                    Rachels-MacBook-Pro:~ rosewater$ pwd
+                    /Users/rosewater
+
+                    # ls - list items in your current working directory
+                    Rachels-MacBook-Pro:~ rosewater$ ls
+                    Applications
+                    Desktop
+                    Documents
+                    Downloads
+                    # etc...
+                    
+                    # change your working directory (one level deeper)
+                    Rachels-MacBook-Pro:~ rosewater$ cd Documents/my_new_folder
+                    Rachels-MacBook-Pro:my_new_folder rosewater$ pwd
+                    /Users/rosewater/Documents/my_new_folder
+
+                    # change your working direcotry (one level back out)
+                    Rachels-MacBook-Pro:my_new_folder rosewater$ cd ..
+                    Rachels-MacBook-Pro:Documents rosewater$ pwd
+                    /Users/rosewater/Documents
                   </code>
                 </pre>
               </div>
@@ -481,7 +509,55 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span></span>
+                +<span>A programming interface for HTML and XML documents</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Represents a webpage so that programs can change the document structure, style, and content</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>The DOM represents the document as nodes and objects</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span class="reading-indicator">REFERENCE:</span> <a href="https://css-tricks.com/dom/">CSS Tricks: What is the DOM?</a>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span class="reading-indicator">REFERENCE:</span> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">MDN Web Docs: Intro to the DOM</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What is the DOM?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span><b>D</b>ocument <b>O</b>bject <b>M</b>odel</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Recall the parent-child relationship of nested HTML elements</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO: https://www.w3schools.com/js/js_htmldom_nodes.asp
+                  </code>
+                  </pre>
               </div>
             </li>
           </ul>
@@ -493,14 +569,402 @@
         <h5>Javascript Fundamentals</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>todo: variables, loops, functions</span>
+            <span>What is Javascript?</span>
           </div>
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span></span>
+                +<span>A programming language that lets you do complex things on the web</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>The web community builds libraries that enable you to create audio, visual, immersive experiences</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Javascript lets you manipulate the DOM - what does this mean?</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span class="reading-indicator">REFERENCE:</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">MDN Docs: What is Javascript?</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Hello, World</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- /exercises/01-hello-world-1.html --&gt;                  
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                      &lt;head&gt;
+                        &lt;title&gt;Intro to Javascript&lt;/title&gt;
+                        &lt;script&gt;
+                          alert(&quot;Hello, World!&quot;);
+                        &lt;/script&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;div&gt;Internal javascript&lt;/div&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Hello, World</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- /exercises/02-hello-world-2.html --&gt;                
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                      &lt;head&gt;
+                        &lt;title&gt;Intro to Javascript&lt;/title&gt;
+                        &lt;script src="02-hello-world-2.js"&gt;&lt;/script&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;div&gt;Externally linked javascript&lt;/div&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  </code>
+                </pre>
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- /js/02-hello-world-2.js --&gt;                
+                    alert("Hello, World!");
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Variables</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Data types - Primitives</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Data types - Objects</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Arrays</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Operators</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Comparisons / Logical Operators</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Comparison Operators</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Logical Operators</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Conditional Operators</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Switch Statements</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Loops: The While Loop</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Loops: The For Loop</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Functions</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # TODO
+                  </code>
+                </pre>
               </div>
             </li>
           </ul>
@@ -519,7 +983,121 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
+                <span><pre><code>console.log("Here is a message");</code></pre></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub Part II</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Starting a new project: Creating a new remote repo</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
                 +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub Part II</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Clone your new remote repo</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub Part II</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Setting up your folder structure</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <img class="child-slide-img" src="https://mdn.mozillademos.org/files/9231/file-structure.png" width="500" height="auto" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub Part II</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Edit your index.html</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>e.g., add your name!</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub Part II</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Making your first commit</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>TODO</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub Part II</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Pushing your changes</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>TODO</span>
               </div>
             </li>
           </ul>
@@ -538,7 +1116,46 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span></span>
+                <img class="child-slide-img" src="https://getpublii.com/docs/media/posts/25/master-branch-github-pages.jpg" width="500" height="auto" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Setting up GitHub Pages</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Exercise: Create a personal page</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Your name</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>About you - a few sentences</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>A picture (of yourself, something you made, whatever you want)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Some styling! Doesn't have to be fancy</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Post a link to your github.io page on the blog</span>
               </div>
             </li>
           </ul>
@@ -550,24 +1167,19 @@
         <h5>Homework</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Due next class</span>
+            <span>Due next class, Saturday 9/15</span>
           </div>
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>Finish your personal page</span>
+                +<span>Finish your personal page + post a link to your username.github.io page on the blog</span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
                 +<span>Finish your 3 panel comic</span>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
-                +<span>Javascript exercises</span>
               </div>
             </li>
           </ul>
