@@ -24,7 +24,7 @@ body {
 div.sub-head-text {
   font-family: "Source Code Pro", monospace;
   font-weight: 300;
-  font-size: 0.5em;
+  font-size: 0.8em;
   color: #ff6efc;
   text-transform: uppercase;
 }
@@ -53,7 +53,7 @@ div.disclaimer, div.title-slide-body {
 div.child-slide-body {
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 22px;
   padding: 32px 0px 32px 0px;
 }
 
@@ -67,16 +67,6 @@ ul > li {
 
 div.wrapper {
   text-align: center;
-}
-
-.reveal ul.ball {
-  text-align: center!important;
-}
-
-ul.ball {
-  margin-left: 0px!important;
-  display: inline-block!important;
-  text-align: center!important;
 }
 
 div.list-item-container > span {
@@ -108,6 +98,11 @@ img.child-slide-img {
   box-shadow: none!important;
   margin: 0px auto!important; 
   width: 100%!important;
+  cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto!important;
+}
+
+mark {
+  /* background: #0092c3!important; */
 }
 
 .reveal pre code {
@@ -117,10 +112,6 @@ img.child-slide-img {
 
 .reveal sup {
   vertical-align: top;
-}
-
-html {
-  cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto!important;
 }
 
 

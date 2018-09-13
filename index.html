@@ -192,12 +192,12 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>You can think of git as a set of commands that help you track changes to your code</span>
+                +<span>You can think of git as a set of commands</span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
-                +<span>The way we use these commands is via a GUI (graphical user interface), like GitHub Desktop</span>
+                +<span>We use these commands via a GUI (graphical user interface), like GitHub Desktop</span>
               </div>
             </li>
             <li>
@@ -226,7 +226,7 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>GitHub comes with some features, like GitHub pages, which we'll use in an upcoming exercise</span>
+                +<span>GitHub comes with features, e.g., GitHub pages</span>
               </div>
             </li>
             <li>
@@ -514,7 +514,7 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>Represents a webpage so that programs can change the document structure, style, and content</span>
+                +<span>Represents a webpage, enabling programs to change document structure, style, content</span>
               </div>
             </li>
             <li>
@@ -553,11 +553,42 @@
             </li>
             <li>
               <div class="list-item-container">
+                <img class="child-slide-img" src="http://s3.amazonaws.com/selfteachme/wp-content/uploads/2016/10/20111234/DOM-TREE.png" width="500" height="auto" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What is the DOM?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span><b>D</b>ocument <b>O</b>bject <b>M</b>odel</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO: https://www.w3schools.com/js/js_htmldom_nodes.asp
+                    &lt;div id=&quot;div1&quot;&gt;
+                      &lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;
+                      &lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;script&gt;
+                      var para = document.createElement(&quot;p&quot;);
+                      var node = document.createTextNode(&quot;This is new.&quot;);
+                      para.appendChild(node);
+                    
+                      var element = document.getElementById(&quot;div1&quot;);
+                      element.appendChild(para);
+                    &lt;/script&gt;
                   </code>
-                  </pre>
+                </pre>
               </div>
             </li>
           </ul>
@@ -581,7 +612,7 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>The web community builds libraries that enable you to create audio, visual, immersive experiences</span>
+                +<span>Javascript libraries allow us to create audio, visual, immersive experiences</span>
               </div>
             </li>
             <li>
@@ -684,9 +715,36 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
+                +<span>We use camel case, e.g., <code>myFirstName</code> and not <code>myfirstname</code></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Name your variables wisely!</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    &lt;!-- /exercises/03-js-variables.html --&gt;
+                    &lt;!-- Assign string "Hello" to myMsg --&gt;           
+                    <mark>let myMsg</mark> = "Hello";
+                    alert(myMsg);
+
+                    &lt;!-- Assign multiple variables in one line (not recommended) --&gt; 
+                    let <mark>firstName</mark> = "Gray", <mark>lastName</mark> = "Area";
+
+                    &lt;!-- You can reassign variables --&gt;
+                    let myAge = 28;
+                    myAge = 24;
+                    alert(myAge);
+
+                    &lt;!-- Constant variables, as the word implies, cannot be changed --&gt;
+                    const TANGERINE_COLOR = '#f28500';
+                    
+                    &lt;!-- 'var' is still common (there is a difference between var and let) --&gt;
+                    var myBookTitle = "TBD";
                   </code>
                 </pre>
               </div>
@@ -707,9 +765,31 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
+                +<span>Variables can hold any data, making Javascript a 'weakly typed' language </span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    &lt;!-- /exercises/04-js-primitives.html --&gt;
+
+                    &lt;!-- Strings --&gt;
+                    let myMsg = "Hello, World!";
+
+                    &lt;!-- Numbers --&gt;
+                    let myPhoneNum = 123456789;
+                    myPhoneNum = "123456789";
+
+                    &lt;!-- Booleans --&gt;
+                    let isCatLady = true;
+
+                    &lt;!-- Null: is a value! --&gt;
+                    let age = null;
+
+                    &lt;!-- Undefined --&gt;
+                    let a;
+                    alert(a);
                   </code>
                 </pre>
               </div>
@@ -730,9 +810,36 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
+               +<span>Objects are a lot to digest, we'll talk more about this in Javascript I</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Objects are a complex data type, hence they are not primitives</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Objects are structures that store key (aka properties) - value pairs of data:</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    let newUser = {
+                      name : "Jane Doe",
+                      id : "3XT89V9",
+                      age : 33,
+                      phone : "123-456-7890"
+                    }
+
+                    &lt;!-- Add (set) a property --&gt;
+                    newUser["likesCats"] = true;
+
+                    &lt;!-- Ways to access (get) a property --&gt;
+                    alert(newUser.name);
+                    alert(newUser["likesCats"]);
                   </code>
                 </pre>
               </div>
@@ -753,9 +860,28 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
+                +<span>Arrays are essentially indexed lists that store multiple values in a single variable</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Indexing starts from 0!</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Arrays in JS are like ArrayLists or Vectors in strongly typed langs, as they are mutable</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    &lt;!-- One way to initialize an array --&gt;
+                    let scouts = ["Eren", "Mikasa", "Armin", "Levi"];
+                    
+                    &lt;!-- Access by index --&gt;
+                    alert(scouts[0]);
                   </code>
                 </pre>
               </div>
@@ -769,7 +895,7 @@
         <h5>Javascript Fundamentals</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Operators</span>
+            <span>Operators: Numbers</span>
           </div>
         </div>
         <div class="child-slide-body">
@@ -778,7 +904,70 @@
               <div class="list-item-container">
                 <pre>
                   <code data-trim data-noescape>
-                    # TODO
+                    &lt;!-- Addition and subtraction --&gt;
+                    let x = 5;
+                    let y = 8;
+                    let z = y - x;
+                    let a = x + y;
+
+                    alert(z);
+                    alert(a);
+
+                    &lt;!-- Division and Modulus (aka Mod or Modulo) --&gt;
+                    let n = 4;
+                    let m = 20;
+                    
+                    alert(m / n);
+                    alert(m % 3);
+                  </code>
+                </pre>
+    
+                <pre>
+                  <code data-trim data-noescape>
+                    &lt;!-- Increment and Decrement --&gt;
+                    let w = 4;
+                    
+                    &lt;!--Increment by 1 (same as w = w + 1) --&gt;
+                    w++;
+
+                    &lt;!-- Add and assign (same as w = w + 2) --&gt;
+                    w += 2;
+                    
+                    &lt;!-- Decrement by 1 (same as w = w - 1) --&gt;
+                    w--;
+                    alert(w);
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Javascript Fundamentals</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Operators: Strings</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    let myMsg = "Hello";                                                    
+                    let newMsg = myMsg + " World!";
+                    alert(newMsg);
+
+                    let yourMsg = "Testing, testing...";
+                    let testNum = 123;
+
+                    &lt;!-- Conversion from number to string --&gt;
+                    let nextMsg = yourMsg + testNum;
+                    alert(nextMsg);
                   </code>
                 </pre>
               </div>
