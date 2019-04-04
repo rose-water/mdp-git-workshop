@@ -16,8 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #1a1e2d; */
-  background: #0d0d1d;
+  background: #1a1e2d;
   overflow: hidden;
 }
 
@@ -98,7 +97,6 @@ img.child-slide-img {
   box-shadow: none!important;
   margin: 0px auto!important; 
   width: 100%!important;
-  cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto!important;
 }
 
 mark {
