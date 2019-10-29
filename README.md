@@ -1,1 +1,1 @@
-Slides for week 1, day 2
+# Slides for MDP Git + Github Workshop ✨💻
