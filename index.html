@@ -110,7 +110,7 @@
                     Rachels-MacBook-Pro:my_new_folder rosewater$ pwd
                     /Users/rosewater/Documents/my_new_folder
 
-                    # change your direcotry (one level back out)
+                    # change your directory (one level back out)
                     Rachels-MacBook-Pro:my_new_folder rosewater$ cd ..
                     Rachels-MacBook-Pro:Documents rosewater$ pwd
                     /Users/rosewater/Documents
@@ -273,11 +273,6 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span class="reading-indicator">REFERENCE:</span> <a href="https://services.github.com/on-demand/github-desktop/create-remote-repository" target="_blank">GitHub: Create a Remote Repo on GitHub</a>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
                 +<span class="reading-indicator">REFERENCE:</span> <a href="http://rogerdudler.github.io/git-guide/" target="_blank">Roger Dudler: Git - The Simple Guide</a>
               </div>
             </li>
@@ -301,33 +296,19 @@
         <div class="child-slide-body">
           <pre>
             <code data-trim data-noescape>
+              # Shows a list of uncommitted + staged code
               git status
+
+              # Add all uncommitted code to be staged (prepare for commit/push)
               git add .
-              git commit -m "your commit message here"            
+
+              # Commit staged changes with an optional message about the commit
+              git commit -m "your commit message here"
+              
+              # Push all staged changes to specified branch (in this case, master)
+              git push origin master
             </code>
           </pre>
-        </div>
-      </section>
-  
-      <!-- ------------- -->
-      <section class="child-slide">
-        <div class="sub-head">
-          <div class="sub-head-text">
-            <span>Pushing your changes</span>
-          </div>
-        </div>
-        <div class="child-slide-body">
-          <ul class="child-slide-body-list">
-            <li>
-              <div class="list-item-container">
-                <pre>
-                  <code data-trim data-noescape>      
-                    git push origin master                                
-                  </code>
-                </pre>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
 
@@ -335,7 +316,7 @@
       <section class="child-slide">
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Create a repo for the Behavior in Motion project</span>
+            <span>Let's create a repo for the Behavior in Motion project</span>
           </div>
         </div>
         <div class="child-slide-body">
@@ -357,7 +338,12 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span><code>touch README.md</code></span>
+                +<span><code>touch README.md</code> - Add some documentation to this file!</span>
+              </div>
+            </li>  
+            <li>
+              <div class="list-item-container">
+                +<span>Add, commit, and push your changes!</span>
               </div>
             </li>        
           </ul>
@@ -454,6 +440,11 @@
                 +<span>Open the directory in your text editor (typically import / drag)</span>
               </div>
             </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Open <code>index.html</code> in a browser to see what it looks like</span>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -489,6 +480,11 @@
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>You MUST name your repo <code>username.github.io</code> in order for this to work!</span>
+              </div>
+            </li>
             <li>
               <div class="list-item-container">
                 <img class="child-slide-img" src="https://getpublii.com/docs/media/posts/25/master-branch-github-pages.jpg" width="700" height="auto" />
@@ -529,7 +525,6 @@
       </section>
 
      
-
       <!-- ------------- -->
       <section class="child-slide">
         <h5>BONUS: Intro to Github Desktop</h5>
@@ -542,7 +537,7 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                
+                +<span>Import your local repository from Part II</span>
               </div>
             </li>
           </ul>
@@ -559,6 +554,16 @@
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Change a file (like your <code>README.md</code>)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Github Desktop should update/refresh to indicate uncommitted changes</span>
+              </div>
+            </li>
             <li>
               <div class="list-item-container">
                 <img class="child-slide-img" src="https://www.hibbittsdesign.org/blog/user/pages/01.posts/2015-12-11-using-grav-with-github/github-desktop-changes-detected.png" width="600" height="auto" />
@@ -586,6 +591,7 @@
           </ul>
         </div>
       </section>
+
 
       <!-- ------------- -->
       <section class="child-slide">
